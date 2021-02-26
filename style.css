@@ -1,0 +1,132 @@
+body {
+    background: linear-gradient(135deg,
+            rgba(224, 241, 255, 1) 0%,
+            rgba(224, 204, 255, 1) 100%);
+    font-family: "Ubuntu", sans-serif;
+}
+
+h1,
+h3 {
+    text-align: center;
+}
+
+#menu ul {
+    display: table;
+    margin: 0 auto;
+}
+
+#menu ul li {
+    display: block;
+    float: left;
+    padding: 10px 20px;
+    margin: 0px 20px 0px 20px;
+    background-color: #4d2eb7;
+    color: white;
+    font-weight: bold;
+}
+
+#content {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+#content h2,
+p {
+    text-align: center;
+}
+
+.bmw {
+    background-color: #ffd5d5;
+}
+
+.audi {
+    background-color: #d5ffdb;
+}
+
+video {
+    display: table;
+    margin: auto;
+}
+
+#galeria img {
+    display: table;
+    margin: auto;
+}
+
+.rekos {
+    animation: rekos infinite forwards 3s ease-in-out;
+}
+
+#galeria1 .zdj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#galeria1 img {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    margin: 20px;
+    cursor: pointer;
+    border: 5px solid #000;
+    border-radius: 8px;
+}
+
+.sepia {
+    filter: sepia(50%);
+}
+
+#galeria1 img:hover {
+    animation: rekos infinite forwards 3s ease-in-out;
+}
+
+@keyframes rekos {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+footer {
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.zad {
+    margin-top: 50px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.box {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    transition: all .3s ease-in-out;
+}
+
+.kwiat {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 300px;
+    opacity: 0.5;
+    z-index: -1;
+    cursor: pointer;
+}
+
+.box:hover{
+    transform: scale(1.2);
+}
